@@ -33,7 +33,48 @@
 
 ---
 
+## Installation
+
+1. Go to the [Releases](https://github.com/cagriyildirimer/ProxDesk/releases) page.
+2. Download the latest `.deb` package (e.g., `ProxDesk_0.1.0_amd64.deb`).
+3. Install it using `dpkg` or your favorite GUI package manager:
+   ```bash
+   sudo dpkg -i ProxDesk_0.1.0_amd64.deb
+   sudo apt-get install -f # to resolve any missing dependencies
+   ```
+4. Launch **ProxDesk** from your application menu.
+
+---
+
+## Proxmox VE API Token Setup
+
+ProxDesk uses Proxmox VE API Tokens instead of raw passwords to ensure maximum security. To connect ProxDesk to your Proxmox server, follow these steps:
+
+### 1. Create a User and Role (Optional but Recommended)
+For security, it is highly recommended to create a dedicated user/role instead of using the `root@pam` user.
+1. Log in to your Proxmox web interface.
+2. Go to **Datacenter -> Permissions -> Roles** and ensure you have an appropriate role (e.g., `PVEVMAdmin` for managing VMs/LXCs, or `Administrator` for full access).
+3. Go to **Datacenter -> Permissions -> Users** and create a new user (e.g., `proxdesk@pve`).
+4. Go to **Datacenter -> Permissions** and assign the role to your user on the `/` (root) path.
+
+### 2. Generate an API Token
+1. Go to **Datacenter -> Permissions -> API Tokens**.
+2. Click **Add** and select the user you want to use (e.g., `root@pam` or your dedicated user).
+3. Enter a Token ID (e.g., `desktop`).
+4. Uncheck "Privilege Separation" if you want the token to inherit all permissions of the user.
+5. Click **Add**.
+6. **IMPORTANT:** Copy the generated `Secret` value immediately. Proxmox will only show it once!
+
+### 3. Connect ProxDesk
+1. Open ProxDesk and click **Add Connection**.
+2. Fill in your Node/Cluster details.
+3. For the API Token, enter it in the format expected by ProxDesk (usually the Token ID goes to the ID field, and the Secret goes to the Secret field).
+4. Click **Test & Save**.
+
+---
+
 ## Development & Running Instructions (Linux)
+
 
 ### System Dependencies
 On Debian/Ubuntu/Kali:
