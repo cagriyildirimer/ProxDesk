@@ -4,7 +4,7 @@
 
 ---
 
-## Key Features
+## 🌟 Key Features
 
 - ⚡ **Linux Native Performance**: Built with Tauri 2.x and Rust backend for Linux desktop environments.
 - 🔐 **Linux Secret Service Integration**: Full API Token authentication with secrets saved in native Linux keyrings (`org.freedesktop.secrets` / GNOME Keyring) or protected local vault (`0600` chmod). Zero plaintext secret storage.
@@ -20,7 +20,7 @@
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technology |
 | :--- | :--- |
@@ -33,7 +33,7 @@
 
 ---
 
-## Installation
+## 🚀 Installation
 
 1. Go to the [Releases](https://github.com/cagriyildirimer/ProxDesk/releases) page.
 2. Download the latest `.deb` package (e.g., `ProxDesk_0.1.0_amd64.deb`).
@@ -46,7 +46,7 @@
 
 ---
 
-## Proxmox VE API Token Setup
+## 🔑 Proxmox VE API Token Setup
 
 ProxDesk uses Proxmox VE API Tokens instead of raw passwords to ensure maximum security. To connect ProxDesk to your Proxmox server, follow these steps:
 
@@ -68,13 +68,16 @@ For security, it is highly recommended to create a dedicated user/role instead o
 ### 3. Connect ProxDesk
 1. Open ProxDesk and click **Add Connection**.
 2. Fill in your Node/Cluster details.
-3. For the API Token, enter it in the format expected by ProxDesk (usually the Token ID goes to the ID field, and the Secret goes to the Secret field).
+3. For the API Token, enter it in the format expected by ProxDesk:
+   - **Token ID**: Your generated Token ID (e.g., `root@pam!desktop` or `proxdesk@pve!desktop`)
+   - **Token Secret**: The secret key you copied earlier.
 4. Click **Test & Save**.
 
 ---
 
-## Development & Running Instructions (Linux)
+## 💻 Development & Building Instructions (Linux)
 
+If you want to compile ProxDesk from source, follow these steps:
 
 ### System Dependencies
 On Debian/Ubuntu/Kali:
