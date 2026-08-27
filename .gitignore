@@ -1,0 +1,20 @@
+# Node.js dependencies & build output
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Rust & Tauri build outputs
+target/
+src-tauri/target/
+
+# OS & IDE temporary files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# ProxDesk local runtime config (may contain non-secret test connection data)
+.proxdesk-config/
+connections.json
