@@ -2,6 +2,8 @@
 
 **ProxDesk** is a modern, fast, lightweight native desktop client built strictly for **Linux** (X11 & Wayland) system administrators managing [Proxmox VE](https://www.proxmox.com/) clusters and standalone nodes. Powered by **Tauri 2.x**, **Rust**, **React**, **TypeScript**, and **Tailwind CSS**, ProxDesk delivers an instant desktop-native interface for daily sysadmin operations without heavy browser overhead.
 
+![ProxDesk Infrastructure Dashboard](docs/images/ProxDesk_1.png)
+
 ---
 
 ## 🌟 Key Features
@@ -10,9 +12,12 @@
 - 🔐 **Linux Secret Service Integration**: Full API Token authentication with secrets saved in native Linux keyrings (`org.freedesktop.secrets` / GNOME Keyring) or protected local vault (`0600` chmod). Zero plaintext secret storage.
 - 🛡️ **Custom TLS & Fingerprint Pinning**: Handles self-signed certificates with explicit SHA-256 fingerprint inspection and pinning. No blind disabling of TLS validation.
 - 📺 **VMware-Style Embedded Console Window**: Live noVNC & xterm.js guest console embedded directly inside the ProxDesk application window with fullscreen support and single-click SSL trust.
+  <br>![ProxDesk Console](docs/images/ProxDesk_3.png)
 - 🌐 **Multi-Server Connections**: Save, test, edit, and switch between multiple Proxmox VE server profiles seamlessly.
+  <br>![ProxDesk Settings](docs/images/ProxDesk_4.png)
 - 📊 **Real-time Infrastructure Dashboard**: Aggregate cluster stats, node hardware metrics, resource usage gauges, and active guest table.
 - 🖥️ **QEMU VM & LXC Container Controls**: Filterable/searchable inventory, status badges (● Running, ○ Stopped, ◐ Paused), and power actions (Start, Shutdown, Reboot, Force Stop).
+  <br>![ProxDesk Guest Modal](docs/images/ProxDesk_2.png)
 - ⚙️ **UPID Task Engine**: Asynchronous task progress tracking (UPID status polling) with header status indicators and monospace task log viewer.
 - 📸 **Snapshot Management**: View snapshot trees, create snapshots (with RAM state option), rollback, and delete.
 - 💾 **Storage & Backup Inspector**: Storage pool usage bars, content types, and backup archive explorer.
