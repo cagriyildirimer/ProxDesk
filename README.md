@@ -94,7 +94,7 @@ sudo apt-get install -y libwebkit2gtk-4.1-dev libgtk-3-dev libsecret-1-dev libss
 ### Running Development Mode
 ```bash
 cd /opt/ProxDesk
-export RUSTUP_HOME=/home/cagri/.rustup CARGO_HOME=/home/cagri/.cargo PATH="/usr/share/nodejs/corepack/shims:/home/cagri/.cargo/bin:$PATH"
+export RUSTUP_HOME=/home/username/.rustup CARGO_HOME=/home/cagri/.cargo PATH="/usr/share/nodejs/corepack/shims:/home/cagri/.cargo/bin:$PATH"
 
 npx tauri dev
 ```
@@ -102,7 +102,7 @@ npx tauri dev
 ### Building Linux Packages (.deb / AppImage)
 ```bash
 cd /opt/ProxDesk
-export RUSTUP_HOME=/home/cagri/.rustup CARGO_HOME=/home/cagri/.cargo PATH="/usr/share/nodejs/corepack/shims:/home/cagri/.cargo/bin:$PATH"
+export RUSTUP_HOME=/home/username/.rustup CARGO_HOME=/home/cagri/.cargo PATH="/usr/share/nodejs/corepack/shims:/home/cagri/.cargo/bin:$PATH"
 
 npx tauri build
 ```
