@@ -29,7 +29,7 @@
 
 | Layer | Technology |
 | :--- | :--- |
-| **Target Platform** | **Linux Native** (Ubuntu, Debian, Fedora, Arch, Kali, Mint, RHEL) |
+| **Target Platform** | **Linux Native** (Ubuntu, Debian, Kali) |
 | **Desktop Framework** | [Tauri 2.x](https://tauri.app/) (GTK3 / WebKitGTK) |
 | **Native Layer** | [Rust](https://www.rust-lang.org/) (`reqwest`, `tokio`, `keyring`, `sha2`, `serde`) |
 | **Frontend Framework** | [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vite.dev/) |
