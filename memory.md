@@ -26,7 +26,7 @@ This file serves as a working memory and context store for future development.
 - **Run dev environment**:
   ```bash
   cd /opt/ProxDesk
-  export RUSTUP_HOME=/home/cagri/.rustup CARGO_HOME=/home/cagri/.cargo PATH="/usr/share/nodejs/corepack/shims:/home/cagri/.cargo/bin:$PATH"
+  export RUSTUP_HOME=/home/username/.rustup CARGO_HOME=/home/username/.cargo PATH="/usr/share/nodejs/corepack/shims:/home/username/.cargo/bin:$PATH"
   npx tauri dev
   ```
 - **Lint/Check**:
